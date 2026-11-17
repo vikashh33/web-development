@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080B20;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 5px solid cyan;
+    border-radius: 12px;
+
+    box-shadow: 0 0 10px cyan,
+                0 0 20px cyan,
+                0 0 40px cyan;
+
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+
+    0% {
+        box-shadow: 0 0 5px cyan;
+        transform: scale(1);
+    }
+
+    50% {
+        box-shadow: 0 0 20px cyan,
+                    0 0 40px cyan,
+                    0 0 60px cyan;
+        transform: scale(1.1);
+    }
+
+    100% {
+        box-shadow: 0 0 5px cyan;
+        transform: scale(1);
+    }
+
+}

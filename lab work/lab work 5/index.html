@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blood Bank Registration</title>
+</head>
+<body>
+  <form action="#" method="post">
+    <table border="1" width="500" cellspacing="0" cellpadding="8" align="center">
+
+      <tr>
+        <th colspan="2" bgcolor="red">
+          <font color="white" size="5">Blood Bank Registration</font>
+        </th>
+      </tr>
+
+      <tr>
+        <td>Full Name</td>
+        <td><input type="text" name="name" required></td>
+      </tr>
+
+      <tr>
+        <td>Age</td>
+        <td><input type="number" name="age" min="18" max="65" required></td>
+      </tr>
+
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="other"> Other
+        </td>
+      </tr>
+
+      <tr>
+        <td>Blood Group</td>
+        <td>
+          <select name="bloodgroup">
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Phone</td>
+        <td><input type="tel" name="phone" maxlength="10" required></td>
+      </tr>
+
+      <tr>
+        <td>Email</td>
+        <td><input type="email" name="email"></td>
+      </tr>
+
+      <tr>
+        <td>Address</td>
+        <td><textarea name="address" rows="3" cols="25"></textarea></td>
+      </tr>
+
+      <tr>
+        <td>Last Donation Date</td>
+        <td><input type="date" name="lastdonation"></td>
+      </tr>
+
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" name="agree" required>
+          I confirm that the above information is correct.
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Register">
+          <input type="reset" value="Clear">
+        </td>
+      </tr>
+
+    </table>
+  </form>
+</body>
+</html>

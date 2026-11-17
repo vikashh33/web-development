@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    border: 3px solid black;
+    padding: 10px;
+    overflow: auto;
+}
+
+.left-img {
+    width: 180px;
+    height: 180px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.right-img {
+    width: 150px;
+    height: 150px;
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+}
